@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery Event and Effect Example</title>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Event: Click
+    $("#button").click(function(){
+        alert("Button clicked!");
+    });
+
+    // Effect: Hide/Show
+    $("#toggleButton").click(function(){
+        $("#toggleDiv").toggle();
+    });
+});
+</script>
+</head>
+<body>
+
+<button id="button">Click for Alert</button><br><br>
+
+<div id="toggleButton">Press to toggle div</div><br>
+<div id="toggleDiv" style="background-color: grey; padding: 20px; color: aliceblue; font-weight: 600; text-transform: uppercase; width: 50%;">Toggle div using jQuery</div>
+
+</body>
+</html>
